@@ -73,7 +73,7 @@
     </li>
 </ul>
 <center>
-  <a href="https://instagram.com/samedaycollision" target="_blank"><amp-img="https://res.cloudinary.com/ark-staffing-agency/image/upload/v1560231665/samedaycollision_nametag_sv2eqp.png" width="100" height="100" layout="responsive" alt="Scan with Instagram camera or click on it"></amp-img></a>
+  <a href="https://instagram.com/samedaycollision" target="_blank"><amp-img src="https://res.cloudinary.com/ark-staffing-agency/image/upload/v1560231665/samedaycollision_nametag_sv2eqp.png" width="50%" height="50%" layout="responsive" alt="Scan with Instagram camera or click on it"></amp-img></a>
 <br>
 <br>
 </center>
@@ -174,13 +174,27 @@
       <br>
         <h2 id="reviews" class="my4 theme2-anchored">Leave us a review</h2>
         <center>
-<amp-facebook-comments width="552"
-  height="310"
-  layout="responsive"
-  data-order-by="social"
-  data-colorscheme="dark"
-  data-href="https://samedaydents.xyz">
-</amp-facebook-comments>
+<div id="graphcomment"></div>
+<script type="text/javascript">
+
+  /* - - - CONFIGURATION VARIABLES - - - */
+
+  // make sure the id is yours
+  window.gc_params = {
+    graphcomment_id: 'Same-Day-Dent-Repair',
+
+    // if your website has a fixed header, indicate it's height in pixels
+    fixed_header_height: 0,
+  };
+
+  /* - - - DON'T EDIT BELOW THIS LINE - - - */
+
+  (function() {
+    var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+    gc.src = 'https://graphcomment.com/js/integration.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+  })();
+</script>
         </center>
         <br>
         <br>
