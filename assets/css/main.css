@@ -448,26 +448,30 @@ h6 {
 --------------------------------------------------------------*/
 @media (max-width: 1279px) {
   .navbar {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: -100%;
     width: 100%;
-    max-width: 400px;
+    max-width: 100%;
     bottom: 0;
     transition: 0.3s;
     z-index: 9997;
   }
-
-  .navbar ul {
-    position: absolute;
-    inset: 0;
-    padding: 50px 0 10px 0;
-    margin: 0;
-    background: rgba(0, 0, 0, 0.9);
-    overflow-y: auto;
-    transition: 0.3s;
-    z-index: 9998;
-  }
+  
+    .navbar ul {
+        position: relative;
+        inset: 0;
+        padding: 10% 0 50% 0;
+        margin: 0;
+        background: rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(150px) !important;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        transition: 0.3s;
+        z-index: 9998;
+        width: 100%;
+        height: max-content;
+    }
 
   .navbar a,
   .navbar a:focus {
